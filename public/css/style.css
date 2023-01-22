@@ -1,5 +1,14 @@
 :root {
-  --link-color: #3b9eff;
+  --elements-bg: #3b9eff;
+  --dark-bg-text-color: #fff;
+  --text-color: #000;
+
+  /* Font families */
+  --font-regular: "ZohoPuviRegular", sans-serif;
+  --font-medium: "ZohoPuviMedium", sans-serif;
+
+  /* Box shadow colors */
+  --faint-black: rgba(0, 0, 0, 0.25);
 }
 /* Global Styling */
 * {
@@ -15,10 +24,11 @@ html {
 
 /* General Styling */
 body {
-  font-family: "ZohoPuviRegular", sans-serif;
+  font-family: var(--font-regular);
   line-height: 1;
   font-size: 1.6rem;
   min-height: 100vh;
+  color: var(--text-color);
 }
 
 /* Reusable classes */
@@ -32,6 +42,9 @@ body {
 .form__signup {
   flex-direction: column;
   gap: 1.2rem;
+  width: 30%;
+  box-shadow: 0 2px 4px var(--faint-black);
+  padding: 4.8rem 2.4rem;
 }
 .title__sign-up {
   font-size: 3.2rem;
@@ -40,6 +53,29 @@ body {
   margin-bottom: 1.8rem;
 }
 .sign-in__link {
-  color: var(--link-color);
+  color: var(--elements-bg);
   cursor: pointer;
+}
+.signup__input {
+  width: 100%;
+  border: none;
+  padding: 1.2rem 0.4rem 0.4rem;
+  border-bottom: 1px solid;
+  margin-bottom: 1.6rem;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  outline: none;
+}
+.btn-submit {
+  width: 100%;
+  padding: 1.2rem;
+  text-transform: capitalize;
+  background: var(--elements-bg);
+  border: none;
+  margin-top: 1.8rem;
+  font-family: inherit;
+  color: var(--dark-bg-text-color);
+  font-size: inherit;
+  font-family: var(--font-medium);
 }
