@@ -1,3 +1,6 @@
+:root {
+  --link-color: #3b9eff;
+}
 /* Global Styling */
 * {
   padding: 0;
@@ -15,4 +18,28 @@ body {
   font-family: "ZohoPuviRegular", sans-serif;
   line-height: 1;
   font-size: 1.6rem;
+  min-height: 100vh;
+}
+
+/* Reusable classes */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* TOP NAV */
+.form__signup {
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.title__sign-up {
+  font-size: 3.2rem;
+}
+.sign-in__desc {
+  margin-bottom: 1.8rem;
+}
+.sign-in__link {
+  color: var(--link-color);
+  cursor: pointer;
 }
