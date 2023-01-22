@@ -1,10 +1,24 @@
-<form action="database" method="post" class="form__signup">
+<form action="database" method="post" class="form__signup flex-center">
   <h2 class="title__sign-up">Sign Up</h2>
-  <p class="sign-in__desc">Already a member? <a>Log in</a></p>
+  <p class="sign-in__desc">
+    Already a member? <a class="sign-in__link">Log in</a>
+  </p>
 
-  <input type="text" name="email" id="Cname" placeholder="Email Address" />
+  <input
+    type="text"
+    name="email"
+    id="Cname"
+    placeholder="Email Address"
+    class="signup__input"
+  />
 
-  <input type="password" name="password" id="address" placeholder="Password" />
+  <input
+    type="password"
+    name="password"
+    id="address"
+    placeholder="Password"
+    class="signup__input"
+  />
 
   <input type="submit" name="submit" value="submit" />
 </form>
