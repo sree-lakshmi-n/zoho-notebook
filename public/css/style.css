@@ -1,7 +1,14 @@
 @font-face {
-  font-family: myFirstFont;
-  src: url(sansation_light.woff);
+  font-family: "ZohoPuviRegular";
+  src: url("../assets/fonts/Zoho\ Puvi\ 3.5/Web-TT/Zoho Puvi Regular.ttf")
+    format("truetype");
 }
+@font-face {
+  font-family: "ZohoPuviMedium";
+  src: url("../assets/fonts/Zoho\ Puvi\ 3.5/Web-TT/Zoho Puvi Medium.ttf")
+    format("truetype");
+}
+
 /* Global Styling */
 * {
   padding: 0;
@@ -16,7 +23,7 @@ html {
 
 /* General Styling */
 body {
-  font-family: sans-serif;
+  font-family: "ZohoPuviRegular", sans-serif;
   line-height: 1;
   font-size: 1.6rem;
 }
