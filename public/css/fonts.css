@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "ZohoPuviRegular";
+  src: url("../assets/fonts/Zoho\ Puvi\ 3.5/Web-TT/Zoho Puvi Regular.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "ZohoPuviMedium";
+  src: url("../assets/fonts/Zoho\ Puvi\ 3.5/Web-TT/Zoho Puvi Medium.ttf")
+    format("truetype");
+}
