@@ -1,0 +1,41 @@
+<title>NoteIt</title>
+
+<link href="/css/fonts.css" rel="stylesheet" type="text/css" />
+<link href="/css/style.css" rel="stylesheet" type="text/css" />
+
+<body class="flex-center">
+  <form
+    action="database"
+    method="post"
+    class="form__<%=formType.formClass%> flex-center"
+  >
+    <h2 class="title__<%=formType.formClass%>"><%=formType.ctaContent%></h2>
+    <p class="<%=formType.descClass%>__desc">
+      <%=formType.descContent%>
+      <a class="<%=formType.descClass%>__link"><%=formType.linkContent%></a>
+    </p>
+
+    <input
+      type="text"
+      name="email"
+      id="Cname"
+      placeholder="Email Address"
+      class="<%=formType.formClass%>__input"
+    />
+
+    <input
+      type="password"
+      name="password"
+      id="address"
+      placeholder="Password"
+      class="<%=formType.formClass%>__input"
+    />
+
+    <input
+      type="submit"
+      name="submit"
+      value="<%=formType.ctaContent%>"
+      class="btn-submit btn-<%=formType.formClass%>"
+    />
+  </form>
+</body>
