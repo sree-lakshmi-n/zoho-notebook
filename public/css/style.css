@@ -39,24 +39,29 @@ body {
 }
 
 /* TOP NAV */
-.form__signup {
+.form__signup,
+.form__signin {
   flex-direction: column;
   gap: 1.2rem;
   width: 30%;
   box-shadow: 0 2px 4px var(--faint-black);
   padding: 4.8rem 2.4rem;
 }
-.title__sign-up {
+.title__signup,
+.title__signin {
   font-size: 3.2rem;
 }
-.sign-in__desc {
-  margin-bottom: 1.8rem;
+.signin__desc,
+.signup__desc {
+  margin-bottom: 3.2rem;
 }
-.sign-in__link {
+.signin__link,
+.signup__link {
   color: var(--elements-bg);
   cursor: pointer;
 }
-.signup__input {
+.signup__input,
+.signin__input {
   width: 100%;
   border: none;
   padding: 1.2rem 0.4rem 0.4rem;
